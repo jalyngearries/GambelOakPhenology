@@ -26,11 +26,8 @@ VegPheno.BLB <- VegPheno.BLB %>%
 VegPheno.BLB <- as.data.frame(VegPheno.BLB)
 
 VegPheno.BLB.F <- data.frame(VegPheno.BLB$Plant.., VegPheno.BLB$Date, VegPheno.BLB$Year)
-VegPheno.BLB.F
 
 VegPheno.BLB.F$VegPheno.BLB.Date <- yday(VegPheno.BLB.F$VegPheno.BLB.Date)
-
-VegPheno.BLB.F
 
 colnames(VegPheno.BLB.F) <- c('Plant.ID', 'DOY', 'Year')
 
