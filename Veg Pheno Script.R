@@ -168,3 +168,5 @@ write.csv(VegPheno.F, 'C:\\Users\\jgearries\\Desktop\\Gearries Pheno Project\\G 
 ggplot(VegPheno.F, aes(x = Year, y = DOY)) +
   geom_point()+
   facet_wrap(~Plant.ID)
+
+dim(VegPheno)
